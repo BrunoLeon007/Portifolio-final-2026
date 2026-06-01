@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meu Portfolio pessoal">
+    <meta name="keywords" content="portfolio, projeto, sobre mim">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Bruno Leonardo">
+
+    <title>Meu Portfolio - Bruno Leonardo</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="menu">
+            <h1>Portfolio</h1>
+            <a href="#">Início</a>
+            <a href="#texto01">Sobre mim</a>
+             <a href="#projetos">Meus Projetos</a>
+              <a href="#contato">Contato</a>
+             
+            <button id="toggleDark" class="dark-btn">
+                <span class="icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <section>
+       
+        <div class="inicio">
+            <div class="img-text">
+                <h2>
+                    Olá! <br>
+                    Sou <span>Bruno Leonardo,</span><br>
+                    desenvolvedor em formação.
+                </h2>
+
+                <img src="assets/ternoazul.png" alt="foto de perfil">
+            </div>
+
+            <div class="redecontato">
+                <a href="https://github.com/BrunoLeon007"><img src="assets/icons8-github-logo-16.png" alt="Github"></a>
+                <a href="https://www.linkedin.com/feed/"><img src="assets/icons8-linkedin-16.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <div class="sobre">
+            <div class="sobre-texto">
+                <h2 id="texto01">Sobre mim</h2>
+                <p>
+                    Olá! Sou Bruno Leonardo, desenvolvedor em formação, com graduação em Gestão de Qualidade.
+                    <br><br>
+                     Uno o raciocínio lógico da programação à visão estratégica da garantia de processos.
+                    <br><br>
+                     Minha meta é desenvolver sistemas de alta performance, utilizando metodologias ágeis e ferramentas de controle de qualidade para entregar produtos de software que superem as expectativas do usuário final e otimizem os resultados do negócio."
+                </p>
+                <br><br>
+                <a href="#">Voltar ao Inicio</a>
+            </div>
+
+            <img src="assets/imgface.jpg" alt="Foto de Bruno Leonardo">
+        </div>
+
+        <div class="projetos" id="projetos">
+            <h2>Alguns dos meus projetos</h2>
+
+            <div class="cards-container">
+                <div class="card">
+                    <a href="https://brunoleon007.github.io/Calculo-Peso/">
+                        <img src="./assets/IMG Calculo Peso.jpg" alt="Projeto 1">
+                    </a>
+                    <h3>Projeto 01</h3>
+                    <p>Cálculo Peso</p>
+                </div>
+
+                <div class="card">
+                    <a href="https://brunoleon007.github.io/Match-de-Vagas/">
+                        <img src="./assets/IMG Match Vagas.jpg" alt="Projeto 2">
+                    </a>
+                    <h3>Projeto 02</h3>
+                    <p>Match de Vagas</p>
+                </div>
+
+                <div class="card">
+                    <a href="https://brunoleon007.github.io/Localizador-de-Codigo/">
+                        <img src="./assets/IMG Localizador de Codigo.jpg" alt="Projeto 3">
+                    </a>
+                    <h3>Projeto 03</h3>
+                    <p>Módulo Operacional de Conferência</p>
+                </div>
+            </div>
+
+            <a href="https://github.com/BrunoLeon007?tab=repositories" class="mais-projetos">Mais Projetos</a>
+        </div>
+
+
+
+   <section class="card"> 
+
+    <h2 id="contato">Entre em contato</h2>
+    
+    
+<form class="contato-form" action="https://formsubmit.co/brunob734@gmail.com" method="POST">
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <input type="hidden" name="_subject" value="Nova mensagem do Portfólio">
+
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+    </div>
+
+    <div class="form-group">
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Ex: Proposta de projeto" required>
+    </div>
+
+    <div class="form-group">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+    </div>
+
+<button type="submit" class="submit-btn">
+    Enviar Mensagem
+</button>
+
+</form>
+</section>
+
+
+
+
+
+   
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido por Bruno Leonardo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

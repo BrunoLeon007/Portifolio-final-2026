@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    color: #ed5227;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    padding: 5px 0;
+    transition: 0.2s ease;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid #ed5227; 
+    color: #ed5227;
+}
+
+span {
+    color: rgb(71, 83, 213);
+}
+
+.inicio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    font-size: 25px;
+}
+
+.inicio img {
+    max-width: 30%;
+    height: auto;
+}
+
+.img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redecontato {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.redecontato a img {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.redecontato a img:hover {
+    transform: scale(1.20);
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 50px;
+}
+
+.sobre-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-texto h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #ed5227;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.sobre img {
+    width: 280px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.projetos {
+    padding: 70px 50px;
+    text-align: center;
+}
+
+.projetos h2 {
+    font-size: 35px;
+    color: #2b5df4;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.25s;
+    text-align: center;
+}
+
+.card a img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.25s;
+}
+
+.card a img:hover {
+    transform: scale(1.08);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #ed5227;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.projetos > a {
+    display: inline-block;
+    margin-top: 40px;
+    background: #ed5227;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.25s;
+    font-weight: 500;
+}
+
+.projetos > a:hover {
+    background: #594fe3;
+    transform: scale(1.05);
+}
+.contato-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 40px 20px;
+}
+
+
+.contato-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ed5227;
+    width: 100%;
+}
+
+
+.contato-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; 
+    padding: 25px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Ajuste para o Modo Escuro */
+.dark-mode .contato-form {
+    background: #1c1c1c;
+    border: 1px solid #333;
+}
+
+#contato{
+    text-align: center;
+}
+
+.contato-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: #e95c16;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.submit-btn:hover {
+    background: #594fe3;
+}
+
+
+footer {
+    background: #594fe3;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+/* DARK MODE */
+.dark-mode {
+    background: #000000;
+    color: #ffffff;
+}
+
+.dark-mode .card {
+    background: #1c1c1c;
+}
+
+.dark-mode .card p {
+    color: #ddd;
+}
+
+.dark-mode .contato-form {
+    background: #1c1c1c;
+    border: 1px solid #333;
+}
+
+.dark-mode .form-group label {
+    color: #ccc;
+}
+
+.dark-mode .form-group input, 
+.dark-mode .form-group textarea {
+    background: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.dark-mode .menu a{
+    color: rgb(94, 164, 183);
+}
+
+.dark-mode span{
+    color: rgb(107, 210, 211);
+}
+
+button#toggleDark {
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    background: white;
+}
+
+.dark-mode #toggleDark {
+    background: #000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .img-text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .inicio img {
+        max-width: 60%;
+    }
+}
+
